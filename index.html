@@ -22,14 +22,14 @@
         <section>
             <h2>Contact</h2>
             <p>Email: <a href="mailto:muratbolu2000@gmail.com">muratbolu2000@gmail.com</a></p>
-            <p><a href="cv/Murat%20Bolu%20-%20CV.pdf" target="_blank">Curriculum Vitae</a></p>
+            <p><a href="cv/Murat%20Bolu%20-%20CV.pdf">Curriculum Vitae</a></p>
             <p>
-                <a href="https://www.linkedin.com/in/muratbolu" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/muratbolu" rel="noopener noreferrer"
                     aria-label="Murat Bolu's LinkedIn Profile">
                     <img src="icons/LI-In-Bug.png" width="15" height="15" alt="LinkedIn Icon" /> LinkedIn
                 </a>
                 |
-                <a href="https://github.com/muratbolu" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/muratbolu" rel="noopener noreferrer"
                     aria-label="Murat Bolu's GitHub Profile">
                     <img src="icons/github-mark.svg" width="15" height="15" alt="GitHub Icon" /> GitHub
                 </a>
@@ -38,10 +38,20 @@
 
         <section>
             <h2>Projects</h2>
-            <p>C++: <a href="https://github.com/muratbolu/CENG334/tree/main/HW1" target="_blank"
-                    rel="noopener noreferrer" aria-label="eshell, a shell program written in C++">eshell</a></p>
+            <p>C++: <a href="https://github.com/muratbolu/CENG334/tree/main/HW1" rel="noopener noreferrer"
+                    aria-label="eshell, a shell program written in C++">eshell</a></p>
         </section>
     </main>
+
+    <script>
+        // Select all anchor elements
+        const links = document.querySelectorAll('a');
+
+        // Loop through each link and set target to _blank
+        links.forEach(link => {
+            link.setAttribute('target', '_blank');
+        });
+    </script>
 </body>
 
 </html>
